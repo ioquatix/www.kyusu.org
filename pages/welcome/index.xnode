@@ -1,7 +1,17 @@
 <page>
-	<heading>Welcome to Utopia</heading>
+	<div style="text-align: center; border-radius: 2em; margin: 1em">
+		<img src="/_static/logo.png" alt="Teapot" style="width: 80%; max-width: 500px" />
+	</div>
 	
-	<p>Utopia is designed to simply your life. It is not an application development framework. It is not a content management system. It does not require a database. It isn't model view controller. It is simply a platform on which websites can be easily developed with a minimum of effort.</p>
+	<section>
+		<p>Teapot is a modern package manager and build tool for C, C++ and Objective-C code.</p>
 	
-	<p><a href="http://www.oriontransfer.co.nz/software/utopia/setup">Utopia Project Page &amp; Documentation</a></p>
+		<listing src="new-project.txt" brush="bash" />
+	</section>
+	
+	<section>
+		<h2>Documentation</h2>
+		
+		<summary path="/documentation" />
+	</section>
 </page>

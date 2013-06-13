@@ -1,0 +1,9 @@
+-- Install teapot (Requires ruby 1.9.3+, gcc-4.8 or clang-3.2, sdiff, git)
+$ sudo gem install teapot
+
+-- Create your project using the Dream framework.
+$ teapot create "My Project" https://github.com/dream-framework project
+
+-- Compile and run the project
+$ cd my-project
+$ teapot run Application/MyProject variant-debug

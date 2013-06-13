@@ -7,17 +7,25 @@
 		<?r if title = (attributes["title"] || @title) ?>
 			<title>#{title.gsub(/<.*?>/, "")} - Utopia</title>
 		<?r else ?>
-			<title>Utopia</title>
+			<title>Kyusu</title>
 		<?r end ?>
 		
 		<link rel="icon" type="image/png" href="/_static/icon.png" />
 		<link rel="stylesheet" href="/_static/site.css" type="text/css" media="screen" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css' />
+		
+		<script src="/_static/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="/_static/jquery-syntax/jquery.syntax.min.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			jQuery(function($) {
+				$.syntax({blockLayout: "plain", theme: "modern"});
+			});
+		</script>
 	</head>
 
 	<body>
-		<div id="header">
-		</div>
-
 		<div id="page">
 			<content />
 		</div>

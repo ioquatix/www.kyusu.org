@@ -1,0 +1,1 @@
+$ teapot run Application/MyProject platform-darwin-osx variant-debug
