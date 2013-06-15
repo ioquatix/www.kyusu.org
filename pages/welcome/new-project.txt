@@ -7,3 +7,18 @@ $ teapot create "My Project" https://github.com/dream-framework project
 -- Compile and run the project
 $ cd my-project
 $ teapot run Application/MyProject variant-debug
+
+I'm a little teapot,
+Short and stout,
+Here is my handle (one hand on hip),
+Here is my spout (other arm out with elbow and wrist bent).
+When I get all steamed up,
+Hear me shout,
+Tip me over and pour me out! (lean over toward spout)
+
+                              ~
+                   ___^___   __
+               .- /       \./ /
+              /  /          _/
+              \__|         |
+                  \_______/
