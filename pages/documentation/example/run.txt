@@ -1,1 +1,22 @@
 $ teapot run Application/MyProject platform-darwin-osx variant-debug
+-- Snip --
+Completed build successfully.
+Running variant-debug for dependency Variant/debug...
+Running platform-darwin-osx for dependency Platform/darwin-osx...
+Running my-project for dependency Application/MyProject...
+/private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug/Applications/My Project/My Project /private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug/Applications/My Project/My Project
+I'm a little teapot,
+Short and stout,
+Here is my handle (one hand on hip),
+Here is my spout (other arm out with elbow and wrist bent).
+When I get all steamed up,
+Hear me shout,
+Tip me over and pour me out! (lean over toward spout)
+
+                              ~
+                   ___^___   __
+               .- /       \./ /
+              /  /          _/
+              \__|         |
+                  \_______/
+Elapsed Time: 0.312s

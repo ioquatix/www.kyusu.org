@@ -1,4 +1,4 @@
--- Install teapot (Requires ruby 1.9.3+, gcc-4.8 or clang-3.2, sdiff, git)
+-- Install teapot (Requires ruby 1.9.3+, gcc-4.8 or clang-3.2, git)
 $ sudo gem install teapot
 
 -- Create your project using the Dream framework.

@@ -1,4 +1,44 @@
 $ cd my-project
 
 -- You might need to specify a different platform.
+$ teapot build Application/MyProject
+Unresolved dependencies:
+<Teapot::Target "my-project"> depends on :platform
+ - provided by <Teapot::Target "platform-darwin-osx">
+ - provided by <Teapot::Target "platform-darwin-ios">
+ - provided by <Teapot::Target "platform-darwin-ios-simulator">
+<Teapot::Target "my-project"> depends on "Language/C++11"
+ - provided by <Teapot::Target "platform-darwin-osx">
+ - provided by <Teapot::Target "platform-darwin-ios">
+ - provided by <Teapot::Target "platform-darwin-ios-simulator">
+Cannot continue due to unresolved dependencies!
+Elapsed Time: 0.009s
+
+-- Multiple options were found for the :platform dependency, so we must be explict about which one we want:
 $ teapot build Application/MyProject platform-darwin-osx variant-debug
+-- Snip --
+Performing Teapot::Build::Targets::Files/build for /private/tmp/src/my-project/source...
+      platform_name: "darwin-osx"
+         xcode_path: #<Pathname:/Applications/Xcode.app/Contents/Developer>
+      platform_path: #<Pathname:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform>
+     toolchain_path: #<Pathname:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain>
+        sdk_version: "10.7"
+           sdk_path: #<Pathname:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk>
+      architectures: ["-arch", "i386", "-arch", "x86_64"]
+         buildflags: ["-arch", "i386", "-arch", "x86_64", "-isysroot", #<Pathname:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk>, "-mmacosx-version-min=10.7", "-O0", "-g", "-Wall", "-Wmissing-prototypes", "-I/private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug/include"]
+          linkflags: ["-g", "-L/private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug/lib"]
+             cflags: ["-arch", "i386", "-arch", "x86_64", "-isysroot", #<Pathname:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk>, "-mmacosx-version-min=10.7", "-O0", "-g", "-Wall", "-Wmissing-prototypes", "-I/private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug/include"]
+           cxxflags: ["-arch", "i386", "-arch", "x86_64", "-isysroot", #<Pathname:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk>, "-mmacosx-version-min=10.7", "-O0", "-g", "-Wall", "-Wmissing-prototypes", "-I/private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug/include", "-std=c++11", "-stdlib=libc++", "-Wno-c++11-narrowing"]
+            ldflags: ["-arch", "i386", "-arch", "x86_64", "-isysroot", #<Pathname:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk>, "-mmacosx-version-min=10.7", "-O0", "-g", "-Wall", "-Wmissing-prototypes", "-I/private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug/include", "-g", "-L/private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug/lib"]
+          configure: []
+                 cc: #<Pathname:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang>
+                cxx: #<Pathname:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++>
+                 ld: #<Pathname:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld>
+                 ar: #<Pathname:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar>
+            libtool: #<Pathname:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool>
+            variant: "debug"
+     platforms_path: #<Pathname:/private/tmp/src/my-project/teapot/platforms/my-project>
+       build_prefix: #<Pathname:/private/tmp/src/my-project/teapot/platforms/my-project/cache/darwin-osx-debug>
+     install_prefix: #<Pathname:/private/tmp/src/my-project/teapot/platforms/my-project/darwin-osx-debug>
+Completed build successfully.
+Elapsed Time: 1.089s

@@ -14,4 +14,6 @@
 	<p>Finally you can run this:</p>
 	
 	<listing src="run.txt" brush="bash" />
+	
+	<p>One thing you'll notice is how explict the build process is in general. Lots of build systems hide away important details in <code class="syntax">config.log</code> files and when you encounter problems it can be complicated to debug. Teapot makes every step explicit to reduce this burden.</p>
 </contents-page>
