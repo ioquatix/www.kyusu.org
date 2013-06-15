@@ -4,9 +4,11 @@
 	</div>
 	
 	<section>
-		<p>Teapot is a modern package manager and build tool for C, C++ and Objective-C code.</p>
+		<p>Teapot is a decentralised package manager and build tool for C, C++ and Objective-C code.</p>
 	
 		<listing src="new-project.txt" brush="bash" />
+		
+		<p>Teapot is currently a work in progress and while it is feasible to use it in a production environment, there are several features planned before 1.0 stable release.</p>
 	</section>
 	
 	<section>
