@@ -8,7 +8,7 @@
 	
 		<listing src="new-project.txt" brush="bash" />
 		
-		<p>Teapot is currently a work in progress and while it is feasible to use it in a production environment, there are several features planned before 1.0 stable release.</p>
+		<p>Teapot is currently a work in progress and while it is feasible to use it in a production environment, there are several features planned for v1.0 which will improve the way teapot works.</p>
 	</section>
 	
 	<section>
