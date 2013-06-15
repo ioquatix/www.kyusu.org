@@ -29,5 +29,9 @@
 		<div id="page">
 			<content />
 		</div>
+		
+		<env only="production">
+			<google-analytics id="UA-2590906-12" />
+		</env>
 	</body>
 </html>

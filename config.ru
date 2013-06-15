@@ -3,9 +3,8 @@
 UTOPIA_ENV = (ENV['UTOPIA_ENV'] || ENV['RACK_ENV'] || :development).to_sym
 $LOAD_PATH << File.join(File.dirname(__FILE__), "lib")
 
-# It is recommended that you always explicity specify the version of the gem you are using.
-gem 'utopia', "= 0.12.1"
 require 'utopia/middleware/all'
+require 'utopia/tags/google-analytics'
 
 # Utopia relies heavily on a local cache:
 require 'rack/cache'
