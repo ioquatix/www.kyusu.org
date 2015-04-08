@@ -11,6 +11,7 @@ RACK_ENV = ENV.fetch('RACK_ENV', :development).to_sym unless defined?(RACK_ENV)
 $LOAD_PATH << File.expand_path("../lib", __FILE__)
 
 require 'utopia'
+require 'utopia/tags/google-analytics'
 require 'rack/cache'
 
 if RACK_ENV == :production
