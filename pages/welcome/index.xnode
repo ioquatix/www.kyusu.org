@@ -1,6 +1,6 @@
 <page>
 	<div style="text-align: center; border-radius: 2em; margin: 1em">
-		<img src="/_static/logo.png" alt="Teapot" style="width: 80%; max-width: 500px" />
+		<img src="/_static/teapot.svg" alt="Teapot" style="width: 80%; max-width: 800px" />
 	</div>
 	
 	<section>
