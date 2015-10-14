@@ -1,4 +1,4 @@
-# www.kyusu.org
+# http://teapot.nz
 
 This is the website for the [teapot][teapot] project.
 
