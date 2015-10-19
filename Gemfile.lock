@@ -26,4 +26,4 @@ PLATFORMS
 DEPENDENCIES
   puma
   utopia (~> 1.1.1)
-  utopia-tags-google-analytics (~> 1.0)
+  utopia-tags-google-analytics
