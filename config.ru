@@ -11,6 +11,8 @@ RACK_ENV = ENV.fetch('RACK_ENV', :development).to_sym unless defined?(RACK_ENV)
 $LOAD_PATH << File.expand_path("lib", __dir__)
 
 require 'utopia'
+require 'utopia/extensions/array'
+require 'utopia/tags/google-analytics'
 require 'rack/cache'
 
 if RACK_ENV == :production
@@ -58,7 +60,8 @@ use Utopia::Content,
 		'deferred' => Utopia::Tags::Deferred,
 		'override' => Utopia::Tags::Override,
 		'node' => Utopia::Tags::Node,
-		'environment' => Utopia::Tags::Environment.for(RACK_ENV)
+		'environment' => Utopia::Tags::Environment.for(RACK_ENV),
+		'google-analytics' => Utopia::Tags::GoogleAnalytics,
 	}
 
 run lambda { |env| [404, {}, []] }
