@@ -1,12 +1,12 @@
 -- Install teapot (Requires ruby 1.9.3+, gcc-4.8 or clang-3.2, git)
 $ sudo gem install teapot
 
--- Create your project using the Dream framework.
-$ teapot create "My Project" https://github.com/dream-framework project
+-- Create your project using the kurocha repository.
+$ teapot create "My Project" https://github.com/kurocha project
 
 -- Compile and run the project
 $ cd my-project
-$ teapot run Application/MyProject variant-debug
+$ teapot brew Run/MyProject
 
 I'm a little teapot,
 Short and stout,
