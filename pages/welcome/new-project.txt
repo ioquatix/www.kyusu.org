@@ -1,4 +1,4 @@
--- Install teapot (Requires ruby 1.9.3+, gcc-4.8 or clang-3.2, git)
+-- Install teapot (Requires ruby 2.2+, gcc-4.8 or clang-3.4, git)
 $ sudo gem install teapot
 
 -- Create your project using the kurocha repository.
