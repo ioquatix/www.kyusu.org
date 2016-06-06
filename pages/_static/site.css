@@ -1,11 +1,31 @@
-/* Copyright (c) 2010 Orion Transfer Ltd. All Rights Reserved. */
+
+@font-face {
+	font-family: 'Fira Code';
+	src: url("/_static/FiraCode/FiraCode-Regular.otf") format("opentype");
+}
+
+html {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 11px;
+}
+
+pre {
+	font-family: 'Fira Code';
+}
+
+@media (min-width: 40em) {
+	html {
+		font-size: 15px;
+	}
+}
+@media (min-width: 54em) {
+	html {
+		font-size: 20px;
+	}
+}
 
 body {
 	margin: 0; padding: 0;
-}
-
-body, p, ol, ul, blockquote {
-	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,4 +65,26 @@ h3, h4, h5, h6 {
 
 section {
 	padding: 4em;
+}
+
+header {
+	background-color: black;
+	margin: 0;
+}
+
+header nav {
+	padding: 0.2rem;
+}
+
+header a {
+	color: white;
+	display: inline-block;
+	padding: 0.5rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header a:hover {
+	background-color: #552F0A;
+	color: #6DE875;
 }

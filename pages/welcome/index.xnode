@@ -1,32 +1,16 @@
 <page>
-	<div style="text-align: center; border-radius: 2em; margin: 1em">
+	<div style="text-align: center; margin: 4rem">
 		<img src="/_static/teapot.svg" alt="Teapot" style="width: 80%; max-width: 800px" />
+		
+		<p>
+			<span style="font-size: 2rem">Designed for programmers.</span><br/>
+			Teapot makes it easy to develop cross-platform modular software with a minimum of configuration.
+		</p>
 	</div>
 	
 	<section>
-		<p>Teapot is a decentralised package manager and build tool for C, C++ and Objective-C code.</p>
-	
+		<h2>30 Second Introduction</h2>
+		
 		<listing src="new-project.txt" brush="bash" />
-		
-		<p>Teapot is now stable for full and partial builds. However, the build daemon mode is an on-going work in progress.</p>
-	</section>
-	
-	<section>
-		<h2>Brief Overview</h2>
-		
-		<p>Teapot is a decentralised build tool for managing complex cross-platform projects. It has many goals but it is primarily designed to improve the experience for developers trying to make cross-platform applications and libraries with a minimum of overhead.</p>
-
-		<ul class="features">
-			<li>Provide useful feedback when dependencies are not met or errors are encountered.</li>
-			<li>Decentralised dependency management allows use within private organisations without exposing code.</li>
-			<li>Generators can simplify the construction of new projects as well as assist with the development of existing ones.</li>
-			<li>The build subsystem provides a simple set of canonical operations for building libraries and executables to minimise configuration overhead.</li>
-		</ul>
-	</section>
-	
-	<section>
-		<h2>Documentation</h2>
-		
-		<summary path="/documentation" />
 	</section>
 </page>

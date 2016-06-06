@@ -1,5 +1,5 @@
 .syntax-theme-base .syntax {
-  font-family: Menlo, Monaco, Consolas, monospace;
+  font-family: 'Fira Code', Menlo, Monaco, Consolas, monospace;
   line-height: 1.15em; }
   .syntax-theme-base .syntax .function {
     color: #3333ff; }

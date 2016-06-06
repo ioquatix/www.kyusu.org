@@ -4,6 +4,8 @@
 		<?r response.content_type! "text/html; charset=utf-8" ?>
 		<?r response.cache! ?>
 		
+		<meta name="viewport" content="initial-scale=1" />
+		
 		<?r if title = self[:title] ?>
 			<title>#{title.gsub(/<.*?>/, "")} - Teapot</title>
 		<?r else ?>
@@ -26,6 +28,14 @@
 	</head>
 
 	<body>
+		<header>
+			<nav>
+				<?r current.node.links.each do |link| ?>
+				#{link.to_href}
+				<?r end ?>
+			</nav>
+		</header>
+		
 		<div id="page">
 			<content />
 		</div>

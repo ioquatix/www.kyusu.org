@@ -1,2 +1,11 @@
 errors:
     display: false
+welcome:
+  order: 1
+  title: Teapot
+documentation:
+  order: 3
+  uri: /documentation/introduction/index
+source:
+  order: 4
+  uri: https://github.com/ioquatix/teapot
