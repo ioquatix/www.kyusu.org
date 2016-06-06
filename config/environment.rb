@@ -18,3 +18,5 @@ $LOAD_PATH << File.expand_path('../lib', __dir__)
 
 # Load utopia framework:
 require 'utopia'
+require 'utopia/extensions/array'
+require 'utopia/tags/google-analytics'

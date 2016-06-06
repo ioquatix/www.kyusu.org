@@ -1,29 +1,55 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.1.1)
+    concurrent-ruby (1.0.2)
+    http-accept (1.4.0)
     json (1.8.3)
-    mail (2.6.3)
-      mime-types (>= 1.16, < 3)
-    mime-types (2.6.2)
-    puma (2.14.0)
+    mail (2.6.4)
+      mime-types (>= 1.16, < 4)
+    mapping (1.0.0)
+    method_source (0.8.2)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    puma (3.4.0)
     rack (1.6.4)
-    rack-cache (1.2)
-      rack (>= 0.4)
-    trenni (1.4.1)
-    utopia (1.1.1)
-      mail (~> 2.6.1)
-      mime-types (~> 2.0)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rainbow (2.1.0)
+    rake (11.1.2)
+    samovar (1.1.0)
+      mapping (~> 1.0.0)
+      rainbow (~> 2.0)
+    slop (3.6.0)
+    trenni (1.7.0)
+    utopia (1.6.10)
+      concurrent-ruby (~> 1.0)
+      http-accept (~> 1.4)
+      mail (~> 2.6)
+      mime-types (>= 2.0, < 4)
       rack (~> 1.6)
-      rack-cache (~> 1.2.0)
-      trenni (~> 1.4.1)
-    utopia-tags-google-analytics (1.0.1)
+      samovar (~> 1.1)
+      trenni (~> 1.6)
+    utopia-tags-google-analytics (1.0.2)
       json
-      utopia (~> 1.0)
+      utopia (~> 1.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
+  pry
   puma
-  utopia (~> 1.1.1)
+  rack-test
+  rake
+  utopia (~> 1.6.10)
   utopia-tags-google-analytics
+
+BUNDLED WITH
+   1.11.2
