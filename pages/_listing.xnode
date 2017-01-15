@@ -1,9 +1,7 @@
 <?r
 
-base_path = current.node.local_path(controller[:page_path])
-
-if attributes[:src]
-	path = File.join(base_path, attributes[:src])
+if src = attributes[:src]
+	path = parent.node.local_path(Utopia::Path.create(src))
 	code = File.read(path)
 else
 	code = content
