@@ -29,10 +29,16 @@ use Utopia::Redirection::Errors,
 use Utopia::Localization,
 	:default_locale => 'en',
 	:locales => ['en', 'de', 'ja', 'zh'],
-	:nonlocalized => ['/_static/', '/_cache/']
+	:nonlocalized => ['/_static/', '/_cache/', '/_components/']
+
+require 'utopia/session'
+use Utopia::Session,
+	:expires_after => 3600 * 24,
+	:secret => ENV['UTOPIA_SESSION_SECRET']
 
 use Utopia::Controller,
-	cache_controllers: (RACK_ENV == :production)
+	cache_controllers: (RACK_ENV == :production),
+	base: Utopia::Controller::Base
 
 use Utopia::Static
 

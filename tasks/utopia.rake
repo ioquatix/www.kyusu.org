@@ -4,9 +4,20 @@ task :deploy do
 	# This task is typiclly run after the site is updated but before the server is restarted.
 end
 
+desc 'Restart the application server'
+task :restart do
+	# This task is run after the deployment task above.
+	if passenger_config = `which passenger-config`.chomp!
+		sh(passenger_config, 'restart-app', '--ignore-passenger-not-running', File.dirname(__dir__))
+	end
+end
+
 desc 'Set up the environment for running your web application'
 task :environment do
 	require_relative '../config/environment'
+	
+	# We ensure this is part of the shell environment so if other commands are invoked they will work correctly.
+	ENV['RACK_ENV'] = RACK_ENV.to_s
 end
 
 desc 'Run a server for testing your web application'
@@ -23,7 +34,7 @@ task :console => :environment do
 	include Rack::Test::Methods
 	
 	def app
-		@app ||= Rack::Builder.parse_file(File.expand_path("config.ru", __dir__)).first
+		@app ||= Rack::Builder.parse_file(File.expand_path("../config.ru", __dir__)).first
 	end
 	
 	Pry.start
