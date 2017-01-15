@@ -29,10 +29,16 @@ use Utopia::Redirection::Errors,
 use Utopia::Localization,
 	:default_locale => 'en',
 	:locales => ['en', 'de', 'ja', 'zh'],
-	:nonlocalized => ['/_static/', '/_cache/']
+	:nonlocalized => ['/_static/', '/_cache/', '/_components/']
+
+require 'utopia/session'
+use Utopia::Session,
+	:expires_after => 3600 * 24,
+	:secret => ENV['UTOPIA_SESSION_SECRET']
 
 use Utopia::Controller,
-	cache_controllers: (RACK_ENV == :production)
+	cache_controllers: (RACK_ENV == :production),
+	base: Utopia::Controller::Base
 
 use Utopia::Static
 
@@ -43,8 +49,7 @@ use Utopia::Content,
 		'deferred' => Utopia::Tags::Deferred,
 		'override' => Utopia::Tags::Override,
 		'node' => Utopia::Tags::Node,
-		'environment' => Utopia::Tags::Environment.for(RACK_ENV),
-		'google-analytics' => Utopia::Tags::GoogleAnalytics,
+		'environment' => Utopia::Tags::Environment.for(RACK_ENV)
 	}
 
 run lambda { |env| [404, {}, []] }
