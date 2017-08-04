@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<?r response.content_type! "text/html; charset=utf-8" ?>
-		<?r response.cache! ?>
-		
 		<meta name="viewport" content="initial-scale=1" />
 		
 		<?r if title = self[:title] ?>
@@ -42,8 +39,8 @@
 			<utopia:content/>
 		</div>
 		
-		<env only="production">
-			<google-analytics id="UA-2590906-12" />
-		</env>
+		<utopia:environment only="production">
+			<analytics:google id="UA-2590906-12" />
+		</utopia:environment>
 	</body>
 </html>

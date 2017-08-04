@@ -42,6 +42,10 @@ use Utopia::Controller
 use Utopia::Static
 
 # Serve dynamic content
-use Utopia::Content
+require 'utopia/analytics'
+use Utopia::Content,
+	namespaces: {
+		'analytics' => Utopia::Analytics,
+	}
 
 run lambda { |env| [404, {}, []] }
