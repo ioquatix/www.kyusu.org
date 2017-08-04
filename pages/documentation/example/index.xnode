@@ -1,19 +1,19 @@
-<contents-page title="Teapot Documentation">
-	<heading>Example</heading>
+<content:contents-page title="Teapot Documentation">
+	<content:heading>Example</content:heading>
 	
 	<p>To create a new project, simply run the following command:</p>
 	
-	<listing src="create.txt" brush="bash" />
+	<content:listing src="create.txt" brush="bash" />
 	
 	<p>This will fetch all dependencies and generate the basic project structure automatically.</p>
 	
 	<p>Next, to build the project:</p>
 	
-	<listing src="build.txt" brush="bash" />
+	<content:listing src="build.txt" brush="bash" />
 	
 	<p>Finally you can run this:</p>
 	
-	<listing src="run.txt" brush="bash" />
+	<content:listing src="run.txt" brush="bash" />
 	
 	<p>One thing you'll notice is how explict the build process is in general. Lots of build systems hide away important details in <code class="syntax">config.log</code> files and when you encounter problems it can be complicated to debug. Teapot makes every step explicit to reduce this burden.</p>
-</contents-page>
+</content:contents-page>

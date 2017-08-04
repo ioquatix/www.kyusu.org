@@ -2,11 +2,11 @@
 $ sudo gem install teapot
 
 -- Create your project using the kurocha repository.
-$ teapot create "My Project" https://github.com/kurocha project
+$ teapot create "My Project" https://github.com/kurocha generate-project
 
 -- Compile and run the project
 $ cd my-project
-$ teapot build Run/MyProject
+$ teapot Run/MyProject
 ... snip ...
 I'm a little teapot,
 Short and stout,

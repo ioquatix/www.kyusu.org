@@ -1,5 +1,5 @@
-<contents-page title="Teapot Documentation">
-	<heading>Introduction</heading>
+<content:contents-page title="Teapot Documentation">
+	<content:heading>Introduction</content:heading>
 	
 	<p>Teapot is an opinionated tool for building cross-platform software, with a primary focus on modern C++ code. It is designed from the ground up to encourage modular and reusable software components, with a minimal amount of configuration.</p>
 	
@@ -26,4 +26,4 @@
 	<p>Another big issue that I faced involved working with other people. I wanted a tool that was sufficiently simple and intelligent, that it could just work out of the box, even for non-programmers. Teapot, in it's current state, isn't quite there yet. But this is also an important long term goal, and it drives the overal design of teapot in many important ways.</p>
 	
 	<p>The Dream Framework, is now a set of modules which can be compiled using Teapot. Many of the examples in this documentation will use it. However, Teapot is a completely generic tool.</p>
-</contents-page>
+</content:contents-page>

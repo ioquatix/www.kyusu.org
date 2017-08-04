@@ -1,4 +1,4 @@
-<page class="basic">
+<content:page class="basic">
 	<link rel="stylesheet" href="#{current.node.uri_path.dirname + 'contents-page.css'}" type="text/css" />
 	
 	<div style="clear: both; position: relative;">
@@ -26,7 +26,7 @@
 
 		<div class="contents-page">
 			<div class="content">
-				<content/>
+				<utopia:content/>
 
 				<div class="siblings">
 				<?r if prev_link ?>
@@ -43,4 +43,4 @@
 	
 		<br style="clear: both" />
 	</div>
-</page>
+</content:page>

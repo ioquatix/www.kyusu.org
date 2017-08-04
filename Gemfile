@@ -1,16 +1,19 @@
 
 source "https://rubygems.org"
 
-gem "utopia", "~> 1.9.10"
-# gem "utopia-tags-gallery"
-gem "utopia-tags-google-analytics"
+gem "utopia", "~> 2.1.2"
+gem "utopia-gallery"
+gem "utopia-analytics"
 
 gem "rake"
 gem "bundler"
 
+gem "rack-freeze", "~> 1.2"
+
 group :development do
 	# For `rake server`:
-	gem "puma"
+	gem "guard-falcon", require: false
+	gem 'guard-rspec', require: false
 	
 	# For `rake console`:
 	gem "pry"

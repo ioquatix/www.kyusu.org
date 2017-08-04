@@ -1,4 +1,4 @@
-<page>
+<content:page>
 	<div style="text-align: center; margin: 4rem">
 		<img src="/_static/teapot.svg" alt="Teapot" style="width: 80%; max-width: 800px" />
 		
@@ -11,6 +11,6 @@
 	<section>
 		<h2>30 Second Introduction</h2>
 		
-		<listing src="new-project.txt" brush="bash" />
+		<content:listing src="new-project.txt" brush="bash" />
 	</section>
-</page>
+</content:page>

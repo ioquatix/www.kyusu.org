@@ -6,5 +6,3 @@ require 'utopia/setup'
 Utopia.setup
 
 RACK_ENV = ENV.fetch('RACK_ENV', :development).to_sym unless defined? RACK_ENV
-
-require 'utopia/extensions/array' #split_at

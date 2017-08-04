@@ -1,9 +1,9 @@
-<contents-page title="Teapot Documentation">
-	<heading>Installation</heading>
+<content:contents-page title="Teapot Documentation">
+	<content:heading>Installation</content:heading>
 	
 	<p>Teapot is available as a Rubygem, and requires Ruby 1.9.3+.</p>
 	
-	<listing src="installation.txt" brush="bash" />
+	<content:listing src="installation.txt" brush="bash" />
 	
 	<p>Framework specific dependencies may exist - typically these include compilers, system libraries (e.g. libz), standard libraries and other related system packages. At present, teapot doesn't handle these dependencies gracefully but it is a goal for the 1.0 release.</p>
 	
@@ -15,5 +15,5 @@
 	
 	<p>Teapot is released under the MIT license:</p>
 	
-	<listing src="license.txt" brush="plain" />
-</contents-page>
+	<content:listing src="license.txt" brush="plain" />
+</content:contents-page>
