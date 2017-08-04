@@ -2,6 +2,7 @@
 
 require_relative 'config/environment'
 
+require 'utopia/extensions/array_split'
 require 'rack/freeze'
 
 if RACK_ENV == :production
