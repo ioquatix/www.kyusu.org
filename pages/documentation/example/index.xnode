@@ -1,19 +1,19 @@
 <content:contents-page title="Teapot Documentation">
 	<content:heading>Example</content:heading>
 	
+	<h2>Creating a new project</h2>
+	
 	<p>To create a new project, simply run the following command:</p>
 	
 	<content:listing src="create.txt" brush="bash" />
 	
-	<p>This will fetch all dependencies and generate the basic project structure automatically.</p>
+	<p>This will fetch all dependencies and generate the basic project structure automatically. All the build logic is generated into the file <code>teapot.rb</code>.</p>
 	
-	<p>Next, to build the project:</p>
+	<h2>Building and running the project</h2>
+	
+	<p>Next, to build and run the project:</p>
 	
 	<content:listing src="build.txt" brush="bash" />
-	
-	<p>Finally you can run this:</p>
-	
-	<content:listing src="run.txt" brush="bash" />
 	
 	<p>One thing you'll notice is how explict the build process is in general. Lots of build systems hide away important details in <code class="syntax">config.log</code> files and when you encounter problems it can be complicated to debug. Teapot makes every step explicit to reduce this burden.</p>
 </content:contents-page>
