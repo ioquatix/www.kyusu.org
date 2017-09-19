@@ -4,3 +4,11 @@ installation:
     order: 2
 example:
     order: 3
+packages:
+    order: 4
+projects:
+    order: 5
+targets:
+    order: 6
+configurations:
+    order: 7

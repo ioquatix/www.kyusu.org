@@ -1,0 +1,16 @@
+define_target "generate-travis" do |target|
+	target.description = <<-EOF
+		Generates a `.travis.yml` file suitable for executing tests.
+	EOF
+	
+	target.depends "Generate/Template"
+	target.provides "Generate/Travis"
+	
+	target.build do
+		source_path = Build::Files::Directory.new(target.package.path + "templates/travis")
+		
+		substitutions = target.context.substitutions
+		
+		generate source: source_path, prefix: target.context.root, substitutions: substitutions
+	end
+end

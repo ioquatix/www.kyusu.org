@@ -5,11 +5,11 @@
 	
 	<p>Teapot supports creative coding and collaboration by making it easy to create and fork existing code and including it in another project. Dependencies are automatically fetched and versioned using <code class="syntax">git</code>, which helps to ensures that code behaves the same on all platforms.</p>
 	
-	<p>Teapot configurations are driven using the Ruby programming language, which means that you will never be limited by Teapot itself. You can easily integrate external build systems along with teapot's own native build system for maximum flexibility.</p>
+	<p>Teapot uses the Ruby programming language for configuration files, which means that you will never be limited by Teapot itself. You can easily integrate external build systems along with teapot's own native build system for maximum flexibility.</p>
 	
 	<h2>Decentralised package management.</h2>
 	
-	<p>Teapot is a distributed package management tool. This means that dependencies take the form of a relative or absolute URL and there is no central package listing or repository. Most parts of the build process are structured as packages which fulfil some part of the build process - e.g. variants, platforms, compilers, libraries, applications, etc. Practically speaking, in order for teapot to compile code, you need packages to satisfy all parts of the build process.</p>
+	<p>Teapot is a decentralised build tool. There is no central package listing or repository and no default behaviour. Most parts of the build process are structured as packages which fulfil some part of the build process - e.g. variants, platforms, compilers, libraries, applications, etc. Practically speaking, in order for teapot to compile code, you need packages to satisfy all parts of the build process.</p>
 	
 	<p>This approach ensures that almost all of the build system can be versioned, including toolchain definitions and build rules. It also reduces the complexity of the code in the core implementation</p>
 	
@@ -21,9 +21,5 @@
 	
 	<h2>Where it all started.</h2>
 	
-	<p>The <a href="https://github.com/kurocha/dream">Dream Framework</a> is a set of modern open source libraries for C++ game development. Teapot was extracted from tooling which was used to build this project. The original Dream project suffered from a monolitic architecture - many dependencies were compiled directly into the project and this made it hard to maintain, test and use in isolation. Specifically, I found myself wanting to create many small example projects, libraries, and so on, but without good tools to do so. With a monolithic library, you can't choose only some parts - and this becomes a problem when you need to support, say, different versions of OpenGL, different audio subsystems, etc.</p>
-	
-	<p>Another big issue that I faced involved working with other people. I wanted a tool that was sufficiently simple and intelligent, that it could just work out of the box, even for non-programmers. Teapot, in it's current state, isn't quite there yet. But this is also an important long term goal, and it drives the overal design of teapot in many important ways.</p>
-	
-	<p>The Dream Framework, is now a set of modules which can be compiled using Teapot. Many of the examples in this documentation will use it. However, Teapot is a completely generic tool.</p>
+	<p>Teapot was extracted from tooling which was used to build a game engine. The original code base suffered from a monolitic architecture - many dependencies were compiled directly into the project and this made it hard to maintain, test and use in isolation. Specifically, I found myself wanting to create many small example projects, libraries, and so on, but without good tools to do so. Monolithic designs force an all or nothing approach, which generally leads to bad layering, feature creep and difficulties sharing code between projects.</p>
 </content:contents-page>

@@ -1,0 +1,31 @@
+<content:contents-page title="Teapot Documentation">
+	<content:heading>Targets</content:heading>
+	
+	<p>The <code>define_target</code> block specifies a buildable target, along with what it provides, it's dependencies, and how to build it.</p>
+	
+	<content:listing src="target.txt" brush="ruby" />
+	
+	<p><code>target.build</code> generates a dependency graph by executing Ruby code. The specific functions are provided by other packages.</p>
+	
+	<p><code>target.depends</code> are used to specify what things are needed in the environment in order to successfully build the target.</p>
+	
+	<p><code>target.provides</code> indicates the things that this target can provide. Multiple packages can provide the same thing, in which case they may need a priority or manual disambiguation.</p>
+	
+	<h2>Build Environments</h2>
+	
+	<p><a href="https://github.com/ioquatix/build-environment">Build environments</a> are fundamental to how teapot builds source code. An environment encapsulates all build rules, variables, and associated meta-data.</p>
+	
+	<p>A simple example would be <a href="https://github.com/kurocha/variants/blob/master/teapot.rb">variants</a>, a package which configures the build environment for different kinds of builds, e.g. debug, release.</p>
+	
+	<p>A more complex example would be <a href="https://github.com/kurocha/unit-test/blob/master/teapot.rb">unit-test</a> which provides custom rules for compiling and running unit tests.</p>
+	
+	<p>Every aspect of the teapot build process is exposed as a package.</p>
+	
+	<h2>Generators</h2>
+	
+	<p>Generators are semantically unique targets in that they create and update files in your project directly.</p>
+	
+	<content:listing src="generator.txt" brush="ruby" />
+	
+	<p>Generators use the merge algorithms from <a href="https://github.com/ioquatix/build-text">build-text</a> to conveniently create class files, unit tests, etc.</p>
+</content:contents-page>

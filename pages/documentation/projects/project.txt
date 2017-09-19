@@ -1,0 +1,17 @@
+# Project Metadata
+
+define_project "my-project" do |project|
+	project.title = "My Project"
+	project.summary = 'A brief one line summary of the project.'
+	
+	project.description = <<-EOF
+		My Project description.
+	EOF
+	
+	project.license = 'MIT License'
+	
+	project.add_author 'Samuel Williams', email: 'samuel.williams@oriontransfer.co.nz'
+	# project.website = 'http://MyProject.com/'
+	
+	project.version = '0.1.0'
+end

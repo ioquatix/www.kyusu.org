@@ -1,0 +1,13 @@
+<content:contents-page title="Teapot Documentation">
+	<content:heading>Targets</content:heading>
+	
+	<p>The <code>define_configuration</code> block declares what packages should be fetched and where from.</p>
+	
+	<content:listing src="configuration.txt" brush="ruby" />
+	
+	<p><code>configuration.public!</code> indicates a configuration which can be required by another. A public configuration with the same name as the package is automatically required by dependent packages.</p>
+	
+	<p><code>configuration.import</code> pulls dependencies from another configuration into this one.</p>
+	
+	<p><code>configuration.require</code> specifies a relative URI which is joined with <code class="syntax ruby">configuration[:source]</code> to produce an URI which is fetched by <code>git</code>.</p>
+</content:contents-page>

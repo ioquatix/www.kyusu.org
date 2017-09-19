@@ -11,6 +11,10 @@ html {
 
 pre {
 	font-family: 'Fira Code';
+	background-color: #f0f0f0;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	tab-size: 4;
 }
 
 @media (min-width: 40em) {
@@ -47,7 +51,7 @@ a:hover {
 	color: #55c;
 }
 
-p, dl, h3 {
+p, dl, h3, pre {
 	margin: 1em;
 }
 

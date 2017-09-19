@@ -1,0 +1,19 @@
+define_target 'my-project-library' do |target|
+	target.build do
+		source_root = target.package.path + 'source'
+		copy headers: source_root.glob('MyProject/**/*.{h,hpp}')
+		build static_library: 'MyProject', source_files: source_root.glob('MyProject/**/*.cpp')
+	end
+	
+	target.depends 'Build/Files'
+	target.depends 'Build/Clang'
+	
+	target.depends :platform
+	target.depends 'Language/C++14', private: true
+	
+	target.provides 'Library/MyProject' do
+		append linkflags [
+			->{install_prefix + 'lib/libMyProject.a'},
+		]
+	end
+end

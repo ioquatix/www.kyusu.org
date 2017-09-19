@@ -1,0 +1,9 @@
+<content:contents-page title="Teapot Documentation">
+	<content:heading>Projects</content:heading>
+	
+	<p>The <code>define_project</code> block specifies meta-data relating to the project itself, e.g. it's name, version, the authors, etc.</p>
+	
+	<content:listing src="project.txt" brush="ruby" />
+	
+	<p><code>project.title</code> is used by project generators so it must follow Title Case formatting rules to be correctly processed.</p>
+</content:contents-page>

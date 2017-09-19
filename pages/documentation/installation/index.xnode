@@ -1,7 +1,7 @@
 <content:contents-page title="Teapot Documentation">
 	<content:heading>Installation</content:heading>
 	
-	<p>Teapot is available as a Rubygem.</p>
+	<p>Teapot is available as a Ruby gem.</p>
 	
 	<content:listing src="installation.txt" brush="bash" />
 	
@@ -9,7 +9,7 @@
 	
 	<h2>Source Code</h2>
 	
-	<p>The source code is available on GitHub: <a href="https://github.com/ioquatix/teapot">https://github.com/ioquatix/teapot</a>.</p>
+	<p>The source code is available on GitHub: <a href="https://github.com/kurocha/teapot">https://github.com/kurocha/teapot</a>.</p>
 	
 	<h2>License</h2>
 	

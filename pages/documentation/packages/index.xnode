@@ -1,0 +1,9 @@
+<content:contents-page title="Teapot Documentation">
+	<content:heading>Packages</content:heading>
+	
+	<p>A teapot package has a <code>teapot.rb</code> file which looks like:</p>
+	
+	<content:listing src="teapot.txt" brush="ruby" />
+	
+	<p>This file has several top level definitions, including <code>define_project</code>, <code>define_target</code> and <code>define_configuration</code>.</p>
+</content:contents-page>
