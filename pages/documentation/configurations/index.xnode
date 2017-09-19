@@ -1,5 +1,5 @@
 <content:contents-page title="Teapot Documentation">
-	<content:heading>Targets</content:heading>
+	<content:heading>Configurations</content:heading>
 	
 	<p>The <code>define_configuration</code> block declares what packages should be fetched and where from.</p>
 	
